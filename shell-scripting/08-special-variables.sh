@@ -7,7 +7,7 @@ echo "All Arguments (\$@): $@"
 echo "Number of variables (\$#): $#"
 echo "Number of Arguments (\$#): $#"
 echo "Script name: $0"
-echo "$0 | cut -d "." -f1"
+echo "$0" | cut -d "." -f1
 echo "Last Command Exit Status: $?"
 echo "Current Directory: $PWD"
 echo "User running this script: $USER"
