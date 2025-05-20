@@ -8,29 +8,29 @@ N="\e[0m"
 
 if [ $USERID -ne 0 ]
 then
-    echo -e "$R ERROR:: Please run this script with root access $N" | tee -a $LOG_FILE
+    echo -e "$R ERROR:: Please run this script with root access $N"
     exit 1 #give other than 0 upto 127
 else
-    echo "You are running with root access" | tee -a $LOG_FILE
+    echo "You are running with root access" 
 fi
 
 # validate functions takes input as exit status, what command they tried to install
 VALIDATE(){
     if [ $1 -eq 0 ]
     then
-        echo -e "Installing $2 is ... $G SUCCESS $N" | tee -a $LOG_FILE
+        echo -e "Installing $2 is ... $G SUCCESS $N" 
     else
-        echo -e "Installing $2 is ... $R FAILURE $N" | tee -a $LOG_FILE
+        echo -e "Installing $2 is ... $R FAILURE $N"
         exit 1
     fi
 }
 
-dnf list installed mysql &>>$LOG_FILE
+dnf list installed mysql 
 if [ $? -ne 0 ]
 then
-    echo "MySQL is not installed... going to install it" | tee -a $LOG_FILE
-    dnf install mysql -y &>>$LOG_FILE
+    echo "MySQL is not installed... going to install it" 
+    dnf install mysql -y 
     VALIDATE $? "MySQL"
 else
-    echo -e "Nothing to do MySQL... $Y already installed $N" | tee -a $LOG_FILE
+    echo -e "Nothing to do MySQL... $Y already installed $N"
 fi
