@@ -1,12 +1,13 @@
 #shell scripting 
--> $@:
--> $$
--> $?
--> $n
+-> $@: Holds the command-line arguments as an array
+-> $$: get the process id (pid)
+-> $?: previously executed command status
+-> $n 
 
 Spec Var - Description
-$0 - Gets the name of the current script.
+$0 - Gets the name of the current script. Script Name.
 $# - Gets the num of arguments passed while executing the bash script.
+    Number of arguments passed to a script
 $* - Gives you a string containing every command-line argument.
 $@ - It stores the list of every command-line argument as an array.
 $1-$9	    Stores the first 9 arguments.
