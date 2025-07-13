@@ -1,1 +1,1 @@
-MONGODB_HOST: mongodb.jsprajampeta.org
+MONGODB_HOST: mongodb-{{ env }}.jsprajampeta.org
