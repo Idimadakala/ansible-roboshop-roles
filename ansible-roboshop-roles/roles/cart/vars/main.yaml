@@ -1,2 +1,2 @@
-CATALOGUE_HOST: catalogue.daws84s.site
+CATALOGUE_HOST: catalogue-{{ env }}.jsprajampeta.org
 REDIS_HOST: redis-{{ env }}.jsprajampeta.org

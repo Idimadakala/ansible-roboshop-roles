@@ -1,5 +1,5 @@
-CART_HOST: cart.daws84s.site
-USER_HOST: user.daws84s.site
+CART_HOST: cart-{{ env }}.jsprajampeta.org
+USER_HOST: user-{{ env }}.jsprajampeta.org
 RABBITMQ_HOST: rabbitmq-{{ env }}.jsprajampeta.org
 RABBITMQ_USER: roboshop
 RABBITMQ_PASSWORD: roboshop123

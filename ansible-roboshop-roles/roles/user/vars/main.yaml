@@ -1,2 +1,2 @@
-REDIS_HOST: redis-{{ env }}.daws84s.site
-MONGODB_HOST: mongodb-{{ env }}.daws84s.site
+REDIS_HOST: redis-{{ env }}.jsprajampeta.org
+MONGODB_HOST: mongodb-{{ env }}.jsprajampeta.org
