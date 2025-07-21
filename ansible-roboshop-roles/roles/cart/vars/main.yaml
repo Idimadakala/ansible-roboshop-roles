@@ -1,2 +1,2 @@
-CATALOGUE_HOST: catalogue-{{ env }}.jsprajampeta.org
+CATALOGUE_HOST: catalogue.backend-{{ env }}.jsprajampeta.org
 REDIS_HOST: redis-{{ env }}.jsprajampeta.org
